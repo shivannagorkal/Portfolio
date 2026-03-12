@@ -1,0 +1,11 @@
+.footer {
+    background-color: rgba(21, 29, 58, 0.763);
+    padding: 4px;
+    text-align: center;
+    margin: 0px;
+    color: white;
+}
+
+.span {
+    color: var(--span);
+}

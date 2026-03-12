@@ -1,0 +1,48 @@
+
+:root{
+
+--title1: linear-gradient(105deg, aqua, #8c1af7);
+--title: linear-gradient(130deg, aqua, rgba(255, 0, 255, 0.8));
+--heading: linear-gradient(135deg, rgba(3, 254, 57, 0.909), rgba(116, 2, 255, 0.932));
+--btn: linear-gradient(135deg, #00f5ff, #7c3aed);
+--line: linear-gradient(135deg, #6366f1, #9333ea, #06b6d4);
+--p:  #6c757d;
+--bg: linear-gradient(90deg, rgba(15, 15, 70, 0.8) 20%, rgba(15, 15, 70, 0.7) 30%, rgba(12, 12, 37, 0.765) 100%);
+
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nova Square", sans-serif;
+    text-align: center;
+
+    background: var(--bg);
+    -webkit-backdrop-filter: blur(50%);
+    backdrop-filter: blur(50%);
+    z-index: -1;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:700px;
+  height:700px;
+
+  background: radial-gradient(
+    circle,
+    rgba(0,150,255,0.6) 0%,
+    rgba(0,180,255,0.4) 30%,
+    rgba(0,0,0,0) 70%
+  );
+
+  filter: blur(120px);
+  z-index:-1;
+}

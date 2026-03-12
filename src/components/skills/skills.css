@@ -1,0 +1,36 @@
+.skill-card {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+/* Professional Skills */
+
+.skill-title {
+    font-size:18px;
+    font-weight:700;
+    margin-bottom: 20px;
+    width: fit-content;
+    text-align: left;
+    color: rgba(92, 245, 27, 0.829);
+}
+
+.pro-skills {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin-left: 10px;
+
+}
+
+.pro-skills li {
+    margin-bottom: 10px;
+}
+
+.pro-skills li::before {
+    content: "=> ";
+    color: aqua;
+}
+
