@@ -10,9 +10,9 @@
 
 .project-card {
     padding: 20px;
-    background-color: rgba(28, 34, 77, 0.943);
+    background-color: rgba(7, 12, 35, 0.806);
     border-radius: 10px;
-    
+    max-width: 500px;
 }
 
 .project-card img {
@@ -22,8 +22,7 @@
 
 .text {
     margin-left: 20px;
-    margin-right: 20px;
-    max-width: 190px;
+    max-width: 180px;
 }
 
 .title {
@@ -38,7 +37,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.text p {
+.project-card p {
     color: var(--p);
     font-size: small;
     margin: 0;

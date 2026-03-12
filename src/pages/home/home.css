@@ -112,6 +112,13 @@
     color: var(--p);
 }
 
+/* project styles */
+.projects {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--p);
+}
 
 /* Stiles aplicable for all sections */
 
@@ -141,6 +148,7 @@
 .heading {
     font-size: xx-large;
     font-weight: 700;
+    display: flex;
     width: fit-content;
     background: var(--heading);
     -webkit-background-clip: text;
