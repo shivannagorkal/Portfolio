@@ -1,4 +1,13 @@
 
+
+/* project styles */
+.projects {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--p);
+}
+
 .projects-card-container {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +19,7 @@
 
 .project-card {
     padding: 20px;
-    background-color: rgba(7, 12, 35, 0.806);
+    background-color: rgba(2, 10, 49, 0.806);
     border-radius: 10px;
     max-width: 500px;
 }
@@ -45,11 +54,16 @@
     margin-bottom: 15px;
 }
 
+.btns {
+    display: flex; 
+    justify-content: space-around;
+}
+
 .project-btn{
 padding: 5px 15px;
 border-radius:8px;
 border:none;
-background: var(--btn);
+background: var(--p-btn);
 color:white;
 font-weight:500;
 width: fit-content;

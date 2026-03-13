@@ -1,4 +1,4 @@
-
+import{ motion } from "framer-motion";
 import "./certificate.css";
 
 const certificates = [
@@ -57,6 +57,23 @@ function certificate() {
 
     return (
         <>
+
+            <motion.section 
+                id="certificates" 
+                className="section"
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+            >
+                <div className="projects">
+                    <h1 className="header">Certifications & Achievements</h1>
+                    <h2 className="heading">Recognizing My Learning Journey.</h2>
+                    <p>A collection of certifications from workshops, courses, and hackathons that reflect
+                         my continuous learning and dedication to developing skills in Artificial Intelligence,
+                          Data Science, and modern technologies.</p>
+                    <div>   
+
             <div className="certificate-card-container">
             {
                 certificates.map((certificate, index) => (
@@ -70,7 +87,11 @@ function certificate() {
                     </div>
                 ))
             }
-            </div>
+            </div>                          
+                    </div>
+                </div>
+                
+            </motion.section>
         
         </>
     )

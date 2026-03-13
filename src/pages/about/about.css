@@ -1,0 +1,23 @@
+.about {
+    display: block;
+    text-align: left;
+}
+
+.paras {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Nova Square", sans-serif;
+    margin: auto;
+    margin-left: 60px;
+    text-align: left;
+    color: var(--p);
+    list-style-type: decimal-leading-zero;
+}
+
+.paras li {
+    margin-bottom: 12px;
+}
+
+.paras li::marker {
+    color: rgba(92, 245, 27, 0.929);
+}

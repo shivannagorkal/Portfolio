@@ -1,11 +1,11 @@
 import { useState, useRef } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import "./email.css";
+import "./contact.css";
 
-const YOUR_SERVICE_ID = "YOUR_SERVICE_ID";
-const YOUR_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const YOUR_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+const YOUR_SERVICE_ID = "service_t5fhgul";
+const YOUR_TEMPLATE_ID = "template_emzgzdd";
+const YOUR_PUBLIC_KEY = "Ypfae0kU1XuwBuXD3";
 
 const contactLinks = [
   {
@@ -102,6 +102,22 @@ export default function Email() {
   };
 
   return (
+
+    <motion.section 
+                id="contact" 
+                className="section"
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+            >
+                <div className="projects">
+                    <h1 className="header">Contact & Connect</h1>
+                    <h2 className="heading">Let’s Build Something Meaningful Together.</h2>
+                    <p>I’m always open to discussing ideas, collaborations, and opportunities related to Artificial Intelligence,
+                        technology, and innovative projects. Feel free to reach out if you'd like to connect or work together.</p>
+                    <div>     
+
     <section className="contact-section" ref={sectionRef} id="contact">
       <div className="contact-bg-blob blob-1" />
       <div className="contact-bg-blob blob-2" />
@@ -308,6 +324,11 @@ export default function Email() {
           </motion.div>
         </div>
       </motion.div>
-    </section>
+    </section>         
+                    </div>
+                </div>
+            </motion.section>
+
+  
   );
 }

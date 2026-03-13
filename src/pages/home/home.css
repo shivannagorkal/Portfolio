@@ -1,11 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
-.section {
-    padding: 50px;
-    text-align: left;
-    margin-top: 40px;
-}
 
 /* Home styles */
 
@@ -75,107 +70,6 @@
     margin: 10px;
 }
 
-
-/* About styles */
-
-.about {
-    display: block;
-    text-align: left;
-}
-
-.paras {
-    font-size: 16px;
-    font-weight: 600;
-    font-family: "Nova Square", sans-serif;
-    margin: auto;
-    margin-left: 60px;
-    text-align: left;
-    color: var(--p);
-    list-style-type: decimal-leading-zero;
-}
-
-.paras li {
-    margin-bottom: 12px;
-}
-
-.paras li::marker {
-    color: rgba(92, 245, 27, 0.929);
-}
-
-
-/* Skills styles */
-
-.skills {
-    font-size: 17px;
-    font-weight: 600;
-    text-align: left;
-    color: var(--p);
-}
-
-/* project styles */
-.projects {
-    font-size: 17px;
-    font-weight: 600;
-    text-align: left;
-    color: var(--p);
-}
-
-/* Stiles aplicable for all sections */
-
-.header {
-    font-size: 15px;
-    font-weight: 00;
-    letter-spacing: 1px;
-    border-radius: 8px;
-    border: 1px solid rgba(0, 255, 255, 0.909);
-    width: fit-content;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: rgba(0, 255, 255, 0.904);
-    transition: 0.3s ease;
-    display: inline-block;
-}
-
-.header:hover {
-    box-shadow:
-    0 0 20px rgba(0,150,255,0.25),
-    0 0 40px rgba(0,150,255,0.15);
-
-    transform: translateY(-6px);
-}
-
-.heading {
-    font-size: xx-large;
-    font-weight: 700;
-    display: flex;
-    width: fit-content;
-    background: var(--heading);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-.btn{
-padding:12px 28px;
-border-radius:8px;
-border:none;
-background: var(--btn);
-color:white;
-font-weight:500;
-cursor:pointer;
-display: inline-block;
-transition:0.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-
-box-shadow:
-0 0 10px rgba(79,172,254,0.6),
-0 0 20px rgba(0,242,254,0.4);
-}
 
 
 

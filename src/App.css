@@ -1,12 +1,13 @@
 
 :root{
 
---title1: linear-gradient(105deg, aqua, #8c1af7);
 --title: linear-gradient(130deg, aqua, rgba(255, 0, 255, 0.8));
 --heading: linear-gradient(135deg, rgba(3, 254, 57, 0.909), rgba(116, 2, 255, 0.932));
 --btn: linear-gradient(135deg, #00f5ff, #7c3aed);
+--p-btn: linear-gradient(135deg, #008080, #FA8072);
 --line: linear-gradient(135deg, #6366f1, #9333ea, #06b6d4);
 --p:  #6c757d;
+--p-hover: white;
 --bg: linear-gradient(90deg, rgba(15, 15, 70, 0.8) 20%, rgba(15, 15, 70, 0.7) 30%, rgba(12, 12, 37, 0.765) 100%);
 
 }
@@ -45,4 +46,96 @@ body::before{
 
   filter: blur(120px);
   z-index:-1;
+}
+
+/* Sections styles */
+
+.section {
+    padding: 50px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.header {
+    font-size: 15px;
+    font-weight: 00;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 255, 255, 0.909);
+    width: fit-content;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgba(0, 255, 255, 0.904);
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.header:hover {
+    box-shadow:
+    0 0 20px rgba(0,150,255,0.25),
+    0 0 40px rgba(0,150,255,0.15);
+
+    transform: translateY(-6px);
+}
+
+.heading {
+    font-size: xx-large;
+    font-weight: 700;
+    display: flex;
+    width: fit-content;
+    background: var(--heading);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.btn{
+padding:12px 28px;
+border-radius:8px;
+border:none;
+background: var(--btn);
+color:white;
+font-weight:500;
+cursor:pointer;
+display: inline-block;
+transition:0.3s;
+}
+
+.btn:hover{
+color: var(--p-hover);
+box-shadow:
+0 0 10px rgba(79,172,254,0.6),
+0 0 20px rgba(0,242,254,0.4);
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width:768px) {
+
+.section{
+    padding:40px;
+    height:auto;
+}
+
+/* BUTTONS */
+
+.btn{
+    text-align:center;
+}
+
+/* HEADINGS */
+
+.heading{
+    font-size:22px;
+}
+
+.header{
+    font-size:12px;
+    padding:4px 10px;
+}
+
+
 }

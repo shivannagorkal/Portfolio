@@ -1,3 +1,13 @@
+
+/* Skills styles */
+
+.skills {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--p);
+}
+
 .skill-card {
     text-align: left;
     display: flex;
