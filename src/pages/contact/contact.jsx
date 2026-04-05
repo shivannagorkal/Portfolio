@@ -104,7 +104,7 @@ export default function Email() {
   return (
 
     <motion.section 
-                id="contact" 
+                id="Contact" 
                 className="section"
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}

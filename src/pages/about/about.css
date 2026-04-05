@@ -1,6 +1,7 @@
 .about {
     display: block;
     text-align: left;
+    max-width: 95%;
 }
 
 .paras {

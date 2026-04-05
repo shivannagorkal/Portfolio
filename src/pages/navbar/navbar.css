@@ -34,7 +34,6 @@ z-index:1000;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10px;
-    transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
@@ -42,13 +41,7 @@ z-index:1000;
     color: rgb(1, 255, 255);
 }
 
-.logo-pic:hover {
-    box-shadow:
-    0 0 20px rgba(0,150,255,0.25),
-    0 0 40px rgba(0,150,255,0.15);
 
-    transform: translateY(-6px);
-}
 
 /* NAV LINKS */
 

@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
 
-  const sections = ["home", "about", "skills", "projects", "certificates", "contact"];
+  const sections = ["Home", "About", "Skills", "Projects", "Certificates", "Contact"];
 
 const Navbar = () => {
 
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState("Home");
   const [menuOpen, setMenuOpen] = useState(false);
 
 
@@ -42,9 +42,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
 
-      <div className="logo-container">
+      <a href="#" className="logo-container">
         <span className="logo-pic"> &lt; <span className="span">S M</span> /&gt; </span>
-      </div>
+      </a>
 
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
         {sections.map((item) => (

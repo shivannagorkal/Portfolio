@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-
 import "./home.css";
 
 
 
 function Home() {
 
-    const text = "Building Modern Web & AI Experiences.";
+    const text = "SHIVANNA. ";
     const [displayText, setDisplayText] = useState("");
 
     useEffect(() => {
@@ -31,7 +30,7 @@ function Home() {
             {/* Home section */}
             
             <motion.section 
-                id="home" 
+                id="Home" 
                 className="section"
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -39,25 +38,24 @@ function Home() {
                 viewport={{ once: true }}
             >
                 <div className="pic-w-home">
-                    <motion.div className="pic-container" initial={{ opacity: 0, y: 50 }} whileInView={{opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 1 }}>
-                        <img src="../../../vite.svg" alt="image" className="pic"/>
+                    <motion.div className="pic-container" initial={{ opacity: 0, y: 50 }} whileInView={{opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 1 }} viewport={{ once: true }}>
+                        <img src="../../../public/profile_pic.jpg" alt="image" className="pic"/>
                     </motion.div>
                     <div className="home">
                     <motion.h1 
-                        className="header" 
+                        className="head-line"
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                     >
-                        Hi, I'm Shivanna M.
+                      {displayText}
                     </motion.h1>
                     <motion.h2
                       initial={{opacity: 0, y: 30}}
                       animate={{ opacity: 1, y: 0}}
                       transition={{ duration: 1}}
-                      className="heading"
                     >
-                      {displayText}
+                      Building Modern Web & AI Experiences.
                     </motion.h2>
                     
                     <motion.p
@@ -79,8 +77,8 @@ function Home() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 1, duration: 0.8 }}
                     >
-                        <a href="#projects" className="btn">View My Projects</a>
-                        <a href="#contact" className="btn">Contact Me</a>
+                        <a href="#Projects" className="btn">View My Projects</a>
+                        <a href="#Contact" className="btn">Contact Me</a>
                     </motion.div>
                     </div>
                 </div>

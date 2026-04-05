@@ -59,14 +59,14 @@ function certificate() {
         <>
 
             <motion.section 
-                id="certificates" 
+                id="Certificates" 
                 className="section"
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
             >
-                <div className="projects">
+                <motion.div className="projects">
                     <h1 className="header">Certifications & Achievements</h1>
                     <h2 className="heading">Recognizing My Learning Journey.</h2>
                     <p>A collection of certifications from workshops, courses, and hackathons that reflect
@@ -89,7 +89,7 @@ function certificate() {
             }
             </div>                          
                     </div>
-                </div>
+                </motion.div>
                 
             </motion.section>
         

@@ -6,6 +6,7 @@
     color: white;
 }
 
-.span {
-    color: var(--span);
+.footer p{
+    
+    color: var(--muted);
 }

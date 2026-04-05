@@ -48,7 +48,7 @@ function Skills() {
     <>
 
       <motion.section 
-          id="skills" 
+          id="Skills" 
           className="section"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -100,7 +100,7 @@ function Skills() {
                             key={index}
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.2 }}
+                            transition={{ delay: index * 0.2, duration: 0.8 }}
                             whileHover={{ scale: 1.1 }}
                             viewport={{ once: true }}
                           >
@@ -126,7 +126,7 @@ function Skills() {
                             key={index}
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.2 }}
+                            transition={{ delay: index * 0.2, duration: 0.8 }}
                             whileHover={{ scale: 1.1 }}
                             viewport={{ once: true }}
                           >
@@ -152,7 +152,7 @@ function Skills() {
                             key={index}
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.2 }}
+                            transition={{ delay: index * 0.2, duration: 0.8 }}
                             whileHover={{ scale: 1.1 }}
                             viewport={{ once: true }}
                           >
@@ -178,7 +178,7 @@ function Skills() {
                             key={index}
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.2 }}
+                            transition={{ delay: index * 0.2, duration: 0.8 }}
                             whileHover={{ scale: 1.1 }}
                             viewport={{ once: true }}
                           >
