@@ -150,13 +150,20 @@ if (form) {
     btnText.textContent = '$ sending...';
     submitBtn.disabled = true;
 
-    const data = new FormData(form);
+    const data = {
+      name: form.querySelector('[name="name"]').value,
+      email: form.querySelector('[name="email"]').value,
+      message: form.querySelector('[name="message"]').value
+    };
 
     try {
       const response = await fetch(form.action, {
         method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
+        body: JSON.stringify(data),
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        }
       });
 
       if (response.ok) {
