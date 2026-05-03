@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shivanna | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- SCANLINE OVERLAY -->
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="prompt">~/</span><span class="nav-name">shivanna</span><span class="cursor-blink">_</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about"><span class="dim">//</span> about</a></li>
+      <li><a href="#skills"><span class="dim">//</span> skills</a></li>
+      <li><a href="#projects"><span class="dim">//</span> projects</a></li>
+      <li><a href="#achievements"><span class="dim">//</span> achievements</a></li>
+      <li><a href="#contact"><span class="dim">//</span> contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="boot-lines" id="bootLines">
+        <p class="boot-line">[  OK  ] Starting portfolio.service...</p>
+        <p class="boot-line">[  OK  ] Loading modules: react, python, ai...</p>
+        <p class="boot-line">[  OK  ] Mounting user: shivanna@niat-mangaluru</p>
+        <p class="boot-line">[  OK  ] System ready.</p>
+      </div>
+      <div class="hero-main" id="heroMain">
+        <div class="hero-label">Full Stack Developer &amp; AI Enthusiast</div>
+        <h1 class="hero-name">
+          <span class="name-line">SHIVANNA</span>
+        </h1>
+        <p class="hero-sub" id="typedText"></p>
+        <div class="hero-location">
+          <span class="prompt">$</span> whoami &nbsp;→&nbsp;
+          <span class="green">B.Tech CSE(AI) · NIAT × Yenepoya · Mangaluru</span>
+        </div>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">view projects</a>
+          <a href="#contact" class="btn btn-outline">get in touch</a>
+          <a href="assets/resume.pdf" download class="btn btn-outline">download cv</a>
+        </div>
+        <div class="hero-links">
+          <a href="https://github.com/shivannagorkal" target="_blank" class="icon-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/shivanna-m-590981374" target="_blank" class="icon-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:shivannagorkal@gmail.com" class="icon-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">scroll down <span class="arrow-down">↓</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">about<span class="green">.</span>me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-code">
+          <div class="code-window">
+            <div class="code-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green-dot"></span>
+              <span class="code-filename">shivanna.js</span>
+            </div>
+            <pre class="code-body"><span class="c-keyword">const</span> <span class="c-var">shivanna</span> = {
+  <span class="c-key">name</span>:    <span class="c-str">"Shivanna"</span>,
+  <span class="c-key">role</span>:    <span class="c-str">"Full Stack Dev &amp; AI Enthusiast"</span>,
+  <span class="c-key">college</span>: <span class="c-str">"NIAT × Yenepoya, Mangaluru"</span>,
+  <span class="c-key">year</span>:    <span class="c-str">"1st Year B.Tech CSE (AI)"</span>,
+  <span class="c-key">goal</span>:    <span class="c-str">"Full Stack → AI/ML Expert"</span>,
+
+  <span class="c-key">currentlyLearning</span>: [
+    <span class="c-str">"React"</span>, <span class="c-str">"Node.js"</span>,
+    <span class="c-str">"Python"</span>, <span class="c-str">"AI APIs"</span>
+  ],
+
+  <span class="c-key">interests</span>: [
+    <span class="c-str">"Building for students"</span>,
+    <span class="c-str">"Hackathons"</span>,
+    <span class="c-str">"Open Source"</span>,
+    <span class="c-str">"Teaching via Debug Dynamos"</span>
+  ],
+
+  <span class="c-key">availableFor</span>: <span class="c-str">"Internships &amp; Collabs"</span>
+};</pre>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>Hey! I'm <span class="green">Shivanna</span>, a first-year B.Tech Computer Science student specialising in Artificial Intelligence at NIAT × Yenepoya University, Mangaluru.</p>
+          <p>I build things for the web — from community platforms to AI-powered learning tools. My mission is to grow from a <span class="green">Full Stack Developer</span> into an <span class="green">AI/ML expert</span> by the time I graduate.</p>
+          <p>I'm also the co-founder of <span class="green">Debug Dynamos</span> — a student community helping peers learn coding concepts and stay updated with tech events through YouTube and WhatsApp.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Hackathons</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Projects Live</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Certificates</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">1st</span>
+              <span class="stat-label">Prize Won</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">skills<span class="green">.</span>json</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-cat-header"><span class="prompt">$</span> languages</div>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">C++</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header"><span class="prompt">$</span> frameworks &amp; libraries</div>
+          <div class="skill-tags">
+            <span class="tag">React</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Node.js</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header"><span class="prompt">$</span> design &amp; tools</div>
+          <div class="skill-tags">
+            <span class="tag">Figma</span>
+            <span class="tag">Canva</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">UI/UX Design</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header"><span class="prompt">$</span> ai &amp; concepts</div>
+          <div class="skill-tags">
+            <span class="tag">AI APIs</span>
+            <span class="tag">GenAI Tools</span>
+            <span class="tag">AI Fundamentals</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="learning-bar">
+        <span class="prompt">$</span> currently_learning:
+        <div class="learning-tags">
+          <span class="tag tag-learning">React Advanced</span>
+          <span class="tag tag-learning">Node.js</span>
+          <span class="tag tag-learning">Machine Learning</span>
+          <span class="tag tag-learning">REST APIs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">projects<span class="green">.</span>exe</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card featured">
+          <div class="project-top">
+            <div class="project-tag">AI · Full Stack · Featured</div>
+            <div class="project-links">
+              <a href="https://vidya-voice.vercel.app/" target="_blank" class="proj-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">VidyaVoice</h3>
+          <p class="project-desc">An AI-powered learning assistant for students. Select your course, class &amp; subject — then get concept explanations, revision help, or take mini MCQ quizzes. Built with real AI API integration, authentication, and a full backend.</p>
+          <div class="project-problem">
+            <span class="prompt">//</span> Problem: Students lack personalised, interactive learning tools in regional contexts.
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">AI API</span>
+            <span class="stack-tag">Auth</span>
+            <span class="stack-tag">Full Stack</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-tag">Community · Frontend</div>
+            <div class="project-links">
+              <a href="https://debug-dynamos.vercel.app/" target="_blank" class="proj-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Debug Dynamos</h3>
+          <p class="project-desc">A community platform showcasing the Debug Dynamos team — connecting students to coding concepts, event updates, and classes through YouTube and WhatsApp channels.</p>
+          <div class="project-problem">
+            <span class="prompt">//</span> Mission: Help students learn code concepts and stay updated with tech events.
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">Frontend</span>
+            <span class="stack-tag">Community</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">achievements<span class="green">.</span>log</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="ach-tabs">
+        <button class="ach-tab active" onclick="showTab('hackathons')">Hackathons</button>
+        <button class="ach-tab" onclick="showTab('certificates')">Certificates</button>
+      </div>
+
+      <!-- Hackathons -->
+      <div class="ach-content" id="hackathons">
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-marker win">🥇</div>
+            <div class="timeline-body">
+              <div class="timeline-top">
+                <h3 class="timeline-title">NIAT Ideathon — 1st Prize</h3>
+                <span class="timeline-badge win-badge">Winner</span>
+              </div>
+              <p class="timeline-desc">Developed an innovative project idea and presented it effectively among multiple teams. Collaborated with a team of 3 to design and showcase a creative technical solution.</p>
+              <span class="timeline-org">NIAT, Mangaluru</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker finalist">🏆</div>
+            <div class="timeline-body">
+              <div class="timeline-top">
+                <h3 class="timeline-title">HACKELITE — Finalist &amp; Certificate of Merit</h3>
+                <span class="timeline-badge finalist-badge">Finalist</span>
+              </div>
+              <p class="timeline-desc">Reached the final round in a team of 6. Developed a working prototype under time pressure. Awarded Certificate of Merit for innovation and teamwork.</p>
+              <span class="timeline-org">SRM Institute of Science &amp; Technology, Chennai · Oct 2025</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker part">⚡</div>
+            <div class="timeline-body">
+              <div class="timeline-top">
+                <h3 class="timeline-title">Smart India Hackathon (SIH)</h3>
+                <span class="timeline-badge part-badge">Participant</span>
+              </div>
+              <p class="timeline-desc">Contributed to problem-solving and idea development during the national-level hackathon. Gained hands-on exposure to real-world innovation challenges.</p>
+              <span class="timeline-org">National Level, India</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker part">⚡</div>
+            <div class="timeline-body">
+              <div class="timeline-top">
+                <h3 class="timeline-title">Hackathon-C3</h3>
+                <span class="timeline-badge part-badge">Participant</span>
+              </div>
+              <p class="timeline-desc">Participated in a 2-day intensive hackathon competition, applying full-stack development skills to build and present a working solution.</p>
+              <span class="timeline-org">Bahubali College of Engineering, Shravanabelagola · Apr 2026</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Certificates -->
+      <div class="ach-content hidden" id="certificates">
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon">🤖</div>
+            <h3 class="cert-title">India's Biggest GenAI Buildathon</h3>
+            <p class="cert-issuer">NxtWave × OpenAI Academy</p>
+            <p class="cert-desc">Explored Generative AI technologies in India's largest GenAI buildathon.</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🏅</div>
+            <h3 class="cert-title">HACKELITE — Certificate of Merit</h3>
+            <p class="cert-issuer">SRM Institute, Chennai · Oct 2025</p>
+            <p class="cert-desc">Awarded for innovation and teamwork at the international hackathon.</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">⚡</div>
+            <h3 class="cert-title">Generative AI Mastery Workshop</h3>
+            <p class="cert-issuer">NxtWave × OpenAI Academy · Sep 2025</p>
+            <p class="cert-desc">Completed hands-on workshop with practical experience in AI tools and applications.</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🧠</div>
+            <h3 class="cert-title">Introduction to Artificial Intelligence</h3>
+            <p class="cert-issuer">Simplilearn SkillUp · Aug 2025</p>
+            <p class="cert-desc">Strengthened foundational AI knowledge through structured online learning.</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">📜</div>
+            <h3 class="cert-title">Hackathon-C3 — Participation</h3>
+            <p class="cert-issuer">Bahubali College of Engineering · Apr 2026</p>
+            <p class="cert-desc">Participated in 2-day hackathon competition organised in collaboration with DSEdify.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">contact<span class="green">.</span>sh</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">I'm open to <span class="green">internships</span>, <span class="green">collaborations</span>, and cool project ideas. Let's build something together!</p>
+          <div class="contact-links">
+            <a href="mailto:shivannagorkal@gmail.com" class="contact-link">
+              <span class="prompt">→</span>
+              <span>shivannagorkal@gmail.com</span>
+            </a>
+            <a href="https://linkedin.com/in/shivanna-m-590981374" target="_blank" class="contact-link">
+              <span class="prompt">→</span>
+              <span>linkedin.com/in/shivanna-m-590981374</span>
+            </a>
+            <a href="https://github.com/shivannagorkal" target="_blank" class="contact-link">
+              <span class="prompt">→</span>
+              <span>github.com/shivannagorkal</span>
+            </a>
+          </div>
+          <div class="contact-status">
+            <span class="status-dot"></span>
+            Available for internships &amp; collaborations
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <div class="code-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green-dot"></span>
+            <span class="code-filename">send_message.sh</span>
+          </div>
+          <form class="contact-form" action="https://formspree.io/f/mpqbwaon" method="POST" id="contactForm">
+            <div class="form-group">
+              <label class="form-label"><span class="prompt">$</span> name</label>
+              <input type="text" name="name" class="form-input" placeholder="your name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label"><span class="prompt">$</span> email</label>
+              <input type="email" name="email" class="form-input" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label"><span class="prompt">$</span> message</label>
+              <textarea name="message" class="form-input form-textarea" placeholder="your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span id="btnText">$ send_message --execute</span>
+            </button>
+            <p class="form-success hidden" id="formSuccess">✓ Message sent! I'll get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <span class="prompt">~/shivanna</span><span class="cursor-blink">_</span>
+      <span class="footer-sep">·</span>
+      <span class="footer-text">Built with passion &amp; lots of <span class="green">{ }</span></span>
+      <span class="footer-sep">·</span>
+      <span class="footer-text">© 2026</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
