@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found | Shivanna Gorkal</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    .error-code {
+      font-size: clamp(4rem, 15vw, 8rem);
+      color: var(--green);
+      font-weight: 700;
+      text-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+      margin-bottom: 0.5rem;
+      line-height: 1;
+    }
+
+    .error-msg {
+      font-size: clamp(1rem, 4vw, 1.25rem);
+      color: var(--text-bright);
+      margin-bottom: 2.5rem;
+    }
+
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- SCANLINE OVERLAY -->
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+
+  <main>
+    <div class="error-code">404</div>
+    <div class="error-msg"><span class="prompt">$</span> Error: Resource not found.</div>
+    <a href="/" class="btn btn-primary home-link">
+      <span class="prompt">~/</span> Return to System Core
+    </a>
+  </main>
+</body>
+
+</html>
