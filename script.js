@@ -41,10 +41,10 @@ function initStatusTime() {
 
 // ===== TYPING EFFECT =====
 const phrases = [
-  'Build scalable fullstack web apps.',
+  'Build full-stack web applications.',
   'Build AI agents.',
   'Turn ideas into products.',
-  'Solving real world problems.',
+  'Solve real-world problems.',
 ];
 
 let phraseIdx = 0;
