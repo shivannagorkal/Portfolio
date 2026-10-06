@@ -278,3 +278,30 @@ if (form) {
     }
   });
 }
+
+// ===== CERTIFICATE MODAL =====
+function openCertModal(imageSrc) {
+  const modal = document.getElementById('certModal');
+  const modalImg = document.getElementById('certImage');
+  if (modal && modalImg) {
+    modalImg.src = imageSrc;
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling underneath
+  }
+}
+
+function closeCertModal(event) {
+  const modal = document.getElementById('certModal');
+  const modalImg = document.getElementById('certImage');
+  
+  // Close if clicked on the close button (X) or the background (but not the image)
+  if (!event || event.target === modal || event.target.classList.contains('cert-modal-close')) {
+    if (modal) {
+      modal.classList.remove('show');
+      document.body.style.overflow = 'auto'; // Restore scrolling
+      setTimeout(() => {
+        if (modalImg) modalImg.src = '';
+      }, 300);
+    }
+  }
+}
